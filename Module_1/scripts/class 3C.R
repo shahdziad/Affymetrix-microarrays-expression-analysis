@@ -16,7 +16,7 @@ load("ShahdZiadMohamedRashad_Class_3B_Assignment.RData")
 
 # check annotation slot of your dataset
 annotation(raw_data)
-
+# The auhors used a Brainarray custom annotation CDF instead of the default Affymetrix annotation 
 
 
 if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
@@ -262,5 +262,6 @@ downregulated <- subset(deg_results, threshold == "Downregulated")
 ## This dataset didn't show any up- or downreguated genes for 
 # an adj. p-value of 0.05 which means it didn't survive multiple testing
 # Atorvastatin "drug" showed no significant change on patients with clinically isolated syndrome
+
 
 
